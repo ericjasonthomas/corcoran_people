@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+img, object, embed, video {
+	/* max-width: 100%; */
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	/* width:100%; */
+}
+/*
+html {
+	background:url(images/temp_back.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+*/
+#header {
+	height:54px;
+/*	background:#666767; */
+background: none repeat scroll 0% 0% rgb(102, 102, 102);
+	text-align:center;
+	display:block;
+	overflow:hidden;
+}
+#headerholder {
+	display:inline-block;
+	/* width:232px; */
+	 width:220px; /* */
+	margin:0 auto;
+	text-align:left;
+  /*border:#9C0 1px solid;*/ 
+}
+#header_global {
+	margin-top:6px;
+ /*margin-left:-1px; */
+}
+#header_global a, a:visited {
+color: #9CC;
+text-decoration: none;
+/* border-bottom-width: 0px; */
+border-bottom:none;
+ 
+}
+#header_global a:hover {
+color: #9CC;
+text-decoration: none;
+/* border-bottom-width: 0px; */
+/* border-bottom:dotted 1px; */
+}
+#header_links {
+width: 380px;
+padding: 6px 0px;
+/* margin-left:1px; */
+}
+#header_links a, a:visited {
+color: white;
+text-decoration: none;
+border-bottom-width: 0px;
+}
+#header_links {
+text-align: left;
+font: 11px Verdana, Geneva, Helvetica, sans-serif;
+color: white;
+visibility:hidden;
+/* margin-left:20px; */
+}
+#header_global {
+text-align: left;
+font: bold 11px Verdana, Geneva, Helvetica, sans-serif;
+color: white;
+/* border:#C90 1px solid; */
+/* margin-left:20px; */
+}
+/* ----------------------- */
+
+@-webkit-keyframes fade {
+	0% { opacity:0; }
+	100% { opacity:1; }
+	
+}
+@-moz-keyframes fade {
+	0% { opacity:0;  }
+	100% { opacity:1; }
+}
+#corcoranpeople, .block {  
+opacity:1; 
+-webkit-animation:fade 2s linear; 
+-moz-animation:fade 2s linear; 
+}
+/* ------------------------ */
+#block01 {
+	background:url(images/PeopleExport.jpg);
+	background-size:100%;
+	
+}
+#block02 {
+	background:url(images/PeopleExport2.jpg);
+	background-size:100%;
+}
+#block03 {
+	background:url(images/PeopleExport3.jpg);
+	background-size:100%;
+}
+#block04 {
+	background:url(images/PeopleExport5.jpg);
+	background-size:100%;
+}
+#block05 {
+	background:url(images/PeopleExport6.jpg);
+	background-size:100%;
+}
+#block06 {
+	background:url(images/PeopleExport7.jpg);
+	background-size:100%;
+}
+#block07 {
+	background:url(images/PeopleExport8.jpg);
+	background-size:100%;
+}
+#block08 {
+	background:url(images/PeopleExport9.jpg);
+	background-size:100%;
+}
+#block09 {
+	background:url(images/PeopleExport10.jpg);
+	background-size:100%;
+}
+#block10 {
+	background:url(images/PeopleExport11.jpg);
+	background-size:100%;
+}
+#block11 {
+	background:url(images/PeopleExport12.jpg);
+	background-size:100%;
+}
+#block12 {
+	background:url(images/PeopleExport13.jpg);
+	background-size:100%;
+}
+
+
+body {
+	margin:0px;
+	text-align:center;
+}
+
+.blockname {
+	z-index:20;
+	background:#f99420;
+	height:18px;
+	float:left;
+	margin-left:5px;
+	margin-top:161px;	
+	/* clear:none; */
+	display:inline-block;
+	color:#FFF;
+	 font-size:18px; 
+	/* font-weight:bold; */
+	font-family:Helvetica,Arial,sans-serif;
+	padding-left:6px;
+	padding-top:3px;
+	/* padding-bottom:2px; */
+}
+.jobtxt {
+}
+.blockjob {
+	z-index:1;
+	font-family:Helvetica,Arial,sans-serif;
+	background:#0CC;
+	height:22px;
+	float:left;
+	margin-left:5px;
+	clear:both;
+	/* clear:none; */
+	padding-left:6px;
+	padding-right:6px;
+	padding-top:3px;
+	display:inline-block;
+	color:#FFF;
+	 font-size:18px; 
+}
+.abouttxt {
+	background:#999;
+	padding:4px;
+	font-family:Helvetica,Arial,sans-serif;
+	line-height:normal;
+	display:inline-block;
+	 font-size:13px; 
+}
+.blocktext {
+	z-index:1;
+	float:left;
+	margin-left:5px;
+	clear:both;	
+	/* clear:none; */
+	display:block;
+	color:#FFF;
+}
+.blocklink {
+	width:220px;
+	height:220px;
+	display:block;
+	margin:5px;
+	/* background:#9C3;
+	opacity:.2; */
+	z-index:24;
+	
+}
+.blocklink1 {
+	width:280px;
+	height:280px;
+	/* display:inline-block;*/
+	 float:left;	
+	/*margin:5px; */
+	position:absolute;
+	/* background:#9C3;
+	opacity:.2; */
+	z-index:100;
+	/* position:relative; */
+	/* border:#0C3 1px solid; */
+	/*display:block;*/
+	
+}
+#pagewrap {
+	
+	display:block;
+	margin:0 auto;
+}
+#headbox {
+}
+#footer {
+
+
+}
+
+.block {
+	
+	float:left;
+	position:relative;
+	text-align:left;
+	
+	width:230px;
+	height:230px;
+	
+}
+.topbox {
+	text-align:left;
+	display:inline-block;
+	width:232px;
+	margin:0 auto;
+}
+#corcoranpeople {
+	width:216px;
+	height:64px;
+	background:url(images/corcoran_people2.png);
+	margin-top:28px;
+	margin-left:7PX; /* */
+	margin-bottom:10px;
+}
+
+.blockholder {
+	display:block;
+	 margin:0 auto;
+	width:230px;
+}
+
+
+
+.gridContainer {
+
+	margin:0 auto;
+	width:100%;
+	
+}
+
+#LayoutDiv1 {
+	clear: both;
+	
+	display: block;
+	margin:0 auto;
+	/* border:#09F 1px solid; */
+}
+
+
+/* phone  Change to 360 */
+
+@media only screen and (min-width: 420px) {
+	#header_links {
+
+visibility:hidden;
+/* margin-left:20px; */
+}
+	#corcoranpeople {
+	width:216px;
+	height:64px;
+		background:url(images/corcoran_people.png);
+	/* background-size:100%; */
+}
+#headerholder {
+	width:290px;
+		/* border:#0C0 1px solid; */
+}
+	
+#LayoutDiv1 {
+	 width:100%;
+}
+.topbox {
+	width:290px;
+		margin:0 auto;
+	/*	border:#096 1px solid; */
+}
+	.blockholder {
+		
+		width:290px;
+		margin:0 auto;
+}
+.blocklink {
+	 width:280px;
+	height:280px;
+}
+.block {
+	
+	width:290px;
+	height:290px;
+	
+	}
+
+}
+
+
+/* phone  Change to 360 */
+
+@media only screen and (min-width: 480px) and (orientation:landscape) {
+	#header_links {
+
+visibility:visible;
+/* margin-left:20px; */
+}
+	
+	#corcoranpeople {
+	width:216px;
+	height:64px;
+		background:url(images/corcoran_people.png);
+	/* background-size:100%; */
+}
+#headerholder {
+	width:460px;
+		
+}
+	
+#LayoutDiv1 {
+	 width:100%;
+	
+}
+.topbox {
+	width:460px;
+		margin:0 auto;
+	
+}
+	.blockholder {
+		width:460px;
+		margin:0 auto;
+}
+.blocklink {
+	 width:220px;
+	height:220px;
+}
+.block {
+	
+	width:230px;
+	height:230px;
+	
+	}
+
+}
+
+
+@media only screen and (min-width: 586px) {
+	#header_links {
+
+visibility:visible;
+/* margin-left:20px; */
+}
+	#corcoranpeople {
+	width:216px;
+	height:64px;
+		background:url(images/corcoran_people.png) #9C0;
+	/*	border:#093 1px solid; */
+	/* background-size:100%;  */
+
+}
+
+#LayoutDiv1 {
+	width:100%;
+}
+
+#headerholder {
+	width:580px;
+}
+	.topbox {
+		width:580px;
+		margin:0 auto;
+}
+	.blockholder {
+		width:580px;
+		margin:0 auto;
+}
+.blocklink {
+	 width:280px;
+	height:280px;
+}
+.block {
+	
+	width:290px;
+	height:290px;
+	
+	}
+
+
+}
+
+
+@media only screen and (min-width: 900px) {
+	#header_links {
+
+visibility:visible;
+
+}
+
+#LayoutDiv1 {
+	width:100%;
+	max-width:1280px;
+}
+#headerholder {
+	
+	width:966PX;
+	
+    height: 54px;
+    background: none repeat scroll 0% 0% rgb(102, 102, 102);
+    margin: 0px auto;
+}
+#header_link_cont {
+	margin-left:54px;
+}
+	.topbox {
+		width:874px;
+		margin:0 auto;
+}
+
+	.blockholder {
+		width:870px;
+		margin:0 auto;
+}
+.blocklink {
+	 width:280px;
+	height:280px;
+}
+.block {
+	
+	width:290px;
+	height:290px;
+	
+	}
+
+}
+

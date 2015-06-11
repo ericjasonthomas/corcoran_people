@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+ <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=0.75, maximum-scale=3.0">
+<link rel="icon" href="http://www.corcoran.org/images/favicon_general.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.corcoran.org/images/favicon_general.ico" type="image/x-icon" />
+<title>Corcoran People</title>
+<!-- <link href="boilerplate.css" rel="stylesheet" type="text/css"> -->
+<link href="peoplestyle.css" rel="stylesheet" type="text/css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- <script src="respond.min.js"></script> -->
+
+</head>
+<body>
+<div id="pagewrap">
+<div class="gridContainer clearfix">
+<div id="header">
+<div id="headerholder">
+<div id="header_link_cont">
+    <div id="header_global"> <a href="http://www.corcoran.org/home">Gallery</a> | <a href="http://www.corcoran.edu/home">College</a> </div>
+      	<div id="header_links"><a href="http://www.corcoran.org/support/index.php">Support</a> | <a href="http://www.corcoran.org/media_center/index.php">Media Center</a> | <a href="http://www.corcoran.org/event_rentals/index.php">Event Rentals</a> | <a href="http://shop.corcoran.org">Shop</a> | <a href="http://www.corcoran.org/contact/index.php">Contact</a>
+</div>
+</div>
+ </div>
+ </div>
+  <div id="LayoutDiv1">
+    <div class="topbox">
+ <div id="corcoranpeople"></div> 
+  </div>
+  <div class="blockholder">
+  	<div class="blockbox block"><a href="http://www.corcoran.org/exhibitions" id="block01" class="blocklink"></a></div>
+  	<div class="blockbox block"><a href="http://www.corcoran.edu/home" id="block02" class="blocklink"></a></div>
+  	<div class="blockbox block"><a href="http://www.corcoran.edu/home" id="block03" class="blocklink"></a></div>
+  	<div class="blockbox block"><a href="http://www.corcoran.edu/exhibitions-events/view" id="block04" class="blocklink"></a></div>
+  	<div class="blockbox block"><a href="http://www.corcoran.org/exhibitions" id="block05" class="blocklink"></a></div>
+  	<div class="blockbox block"><a href="http://www.corcoran.edu/admissions/visit" id="block06" class="blocklink"></a></div>
+    <div class="blockbox block"><a href="http://www.corcoran.edu/home" id="block07" class="blocklink"></a></div>
+    <div class="blockbox block"><a href="http://www.corcoran.org/youth-family" id="block08" class="blocklink"></a></div>
+    <div class="blockbox block"><a href="http://www.corcoran.org/pride" id="block09" class="blocklink"></a></div>
+    <div class="blockbox block"><a href="http://www.corcoran.org/visit/cafe" id="block10" class="blocklink"></a></div>
+    <div class="blockbox block"><a href="http://www.corcoran.edu/admissions" id="block11" class="blocklink"></a></div>
+    <div class="blockbox block"><a href="http://www.corcoran.edu/admissions" id="block12" class="blocklink"></a></div>
+  </div>
+  </div>
+</div>
+<div id="footer">
+</div>
+
+</div>
+	<script>
+	(function() {
+		$('p').show();
+		var lis = $('.block').hide();
+		
+		$ (function() {
+			var i = 0;
+			(function displayImages() {
+				lis.eq(i++).fadeIn(200, displayImages);
+			})();
+		});
+	
+	})();
+
+	</script>
+    
+</body>
+</html>
