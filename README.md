@@ -3,4 +3,5 @@ Corcoran people page
 *
 - HTML
 - CSS
-**No Javascript needed**
+...
+**No Javascript**
